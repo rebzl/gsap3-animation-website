@@ -75,7 +75,8 @@ function App() {
   });
   return (
     <Router>
-      <Header />
+      {/* Pass dimensions as props to set up the height of the menu  */}
+      <Header dimensions={dimensions} />
       {console.log(dimensions)}
       <div className="App">
         {routes.map(({ path, Component }) => (
